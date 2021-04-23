@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Restaurant</title>
+        <meta charset="utf-8">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">My Restaurant</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="falsed" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="home.html">HOME
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">My Account</a>
+                            </li>
+                            
+                        </ul>
+
+                        <form class="form-inline">
+                            <div class="md-form my-0">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-1z" data-slide-to="4"></li>
+                        </ol>
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="image/chinesefood.jfif" alt="First Slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="image/Malayfood.jfif" alt="Second Slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="image/indianfood.jfif" alt="Third Slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" id="foodpicture" src="image/westernfood.jfif" alt="Forth Slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="image/dessert.jpg" alt="Fifth Slide">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        
+                        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next"></span>
+                            <span class="carousel-control-next-icon" aria-hidden="true">
+                                <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="mt-5">
+            <div class="container">
+
+                <section id="food" class="text-center">
+                    <h2 class="mb-5 font-weight-bold">Our Restaurant Food</h2>
+
+                    <div class="row d-flex justify-content-center mb-4">
+                        <div class="col-md-8">
+                            <p>We choose the freshest raw Materials for give the highest safety to our customer. Our food also is healthy food. We no use any MSG，preservative， pigment or other harmful materials in the food. You can have our food with relieved.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 mb-1">
+                            <div>
+                                <center><img src="image/pao.jfif" class="img-fluid" alt="Steamed Buns" id="pic"></center>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <h4 class="my-4 font-weight-bold">Steamed Buns</h4>
+                            <p>This is a original Shang Hai food. This is a famously in the china, it also is one of chinese favour food.</p>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 mb-1">
+                            <div>
+                                <center><img src="image/nasilemak.jfif" class="img-fluid" alt="Nasi Lemak" id="pic">
+                            </div>
+                            <h4 class="my-4 font-weight-bold">Nasi Lemak</h4>
+                            <p>This is a Malaysia local food. It also is Malaysian favours food. Everyone haven eat nasi lemak in Malaysia. This food is essential to eat when coming Malaysia.</p>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 mb-1">
+                            <div>
+                                <center><img src="image/chop.jfif" class="img-fluid" alt="Chicken Chop" id="pic"></center>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <h4 class="my-4 font-weight-bold">Chicken Chops</h4>
+                            <p>This is a tradisional western food. Every western Restaurant also know how to cock it. But every restaurant has also different recipe, so it will different taste when you go to different western restaurant.</p>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h6 class="text-uppercase font-weight-bold">Menu</h6>
+                        <ul class="list-unstyled">
+                            <li class="subfooter"><a href="#">Chinese Food</a></li>
+                            <li class="subfooter"><a href="#">Malay Food</a></li>
+                            <li class="subfooter"><a href="#">Indian Food</a></li>
+                            <li class="subfooter"><a href="#">Western Food</a></li>
+                            <li class="subfooter"><a href="#">Dessert</a></li>
+                            <li class="subfooter"><a href="#">Drinks</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h6 class="text-uppercase font-weight-bold">About Us</h6>
+                        <ul class="list-unstyled">
+                            <li class="subfooter"><a href="#">History</a></li>
+                            <li class="subfooter"><a href="#">News</a></li>
+                            <li class="subfooter"><a href="#">Blog</a></li>
+                            <li class="subfooter"><a href="#">Jobs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h6 class="text-uppercase font-weight-bold">Contract</h6>
+                        <p>Ardess us:</p>
+                        <p>10, Taman Berjaya,81300,Johor</p><br/>
+                        <p>Gmail us:</p>
+                        <p>MyRestaurant@mywebsite.com</p><br/>
+                        <p>Our contact number:</p>
+                        <p>+649532187</p>
+                    </div>
+
+                    <div class="footer-copyright text-center">
+                        @ 2021 Copyright: MyRestaurant.com.my
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+        <!--Carousel option-->
+        <script>
+            $('.carousel').carousel({
+                interval: 2000,
+            })
+        </script>
+
+    </body>
+</html>

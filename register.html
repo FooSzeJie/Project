@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Restaurant</title>
+        <meta charset="utf-8">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">My Restaurant</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="falsed" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">HOME</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="login.html">My Account
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+
+                        <form class="form-inline">
+                            <div class="md-form my-0">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="mt-5">
+            <div class="row">
+                <div class="contract">
+                    <div class="col-lg-12 col-md-12">
+                        <h3 class="mb-5 font-weight-bold text-center" id="title">Register Page</h3>
+                    </div>
+        
+                    <form method="post" onsubmit="return registerForm();">
+                        <div class="contract">
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Email" name="email" id="email" required>
+                        
+                            <label for="password"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+                            <label for="repeatPassword"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="repeatPassword" id="repeatPassword" required>
+                                
+                            <input type="submit" value="Register" id="submit">
+
+                            <label>
+                              <br/><span class="register">Already have an account <a href="login.html">Sign in</a>?</span>
+                            </label>
+                            
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </main> 
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h6 class="text-uppercase font-weight-bold">Menu</h6>
+                        <ul class="list-unstyled">
+                            <li class="subfooter"><a href="chineseFood.html">Chinese Food</a></li>
+                            <li class="subfooter"><a href="malayFood.html">Malay Food</a></li>
+                            <li class="subfooter"><a href="indianFood.html">Indian Food</a></li>
+                            <li class="subfooter"><a href="westernFood.html">Western Food</a></li>
+                            <li class="subfooter"><a href="dessert.html">Dessert</a></li>
+                            <li class="subfooter"><a href="beverage.html">Beverage</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h6 class="text-uppercase font-weight-bold">About Us</h6>
+                        <ul class="list-unstyled">
+                            <li class="subfooter"><a href="#">History</a></li>
+                            <li class="subfooter"><a href="#">News</a></li>
+                            <li class="subfooter"><a href="#">Blog</a></li>
+                            <li class="subfooter"><a href="#">Jobs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h6 class="text-uppercase font-weight-bold">Contract</h6>
+                        <p>Ardess us:</p>
+                        <p>10, Taman Berjaya,81300,Johor</p><br/>
+                        <p>Gmail us:</p>
+                        <p>MyRestaurant@mywebsite.com</p><br/>
+                        <p>Our contact number:</p>
+                        <p>+649532187</p>
+                    </div>
+
+                    <div class="footer-copyright text-center">
+                        @ 2021 Copyright: MyRestaurant.com.my
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+        <!--Carousel option-->
+        <script>
+            $('.carousel').carousel({
+                interval: 2000,
+            })
+        </script>
+
+    </body>
+</html>
